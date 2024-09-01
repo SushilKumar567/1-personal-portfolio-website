@@ -20,14 +20,17 @@ nav {
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  top: 0;
+  top: 5px;
   left: 0;
-  background-color: #1d1d1f;
+  background-color: #b2c6b6;
   z-index: 1;
 }
 
 .logo {
-  width: 140px;
+  font-family: serif;
+  font-size: 40px;
+  font-style: italic;
+  color: #b75b48;
 }
 
 nav ul li {
@@ -37,30 +40,33 @@ nav ul li {
 }
 
 nav ul li .menu {
-  color: white;
+  color: #1d1d1f;
   text-decoration: none;
   font-size: 20px;
   transition: 0.2s ease-out;
 }
+
 nav ul li .menu:hover {
-  color: #a67e41;
-  box-shadow: 5px 5px 20px #a67e41;
+  color: #b75b48;
+  box-shadow: 2.5px 2.5px 10px #b75b48;
+  font-size: 20.5px;
+  margin-right: 2px;
+}
+
+li .btn-h {
+  background-color: #b75b48dd;
 }
 
 /* --------------------------- Cover ---------------------------- */
-.cover {
+main .cover {
   display: flex;
   justify-content: space-around;
-  padding: 125px 7% 75px;
-  background-color: #ab987a25;
+  padding: 125px 7% 55px;
+  background: linear-gradient(0.25turn, #fff, #e8ecd6);
   margin: 0 50px;
-  border-radius: 50px;
-  transition: 0.5s;
+  border-bottom-right-radius: 250px;
 }
 
-.cover:hover {
-  box-shadow: 2.5px 2.5px 2.5px #a67e41;
-}
 .cover-text {
   width: 60%;
 }
@@ -70,6 +76,7 @@ nav ul li .menu:hover {
 }
 
 .cover-image img {
+  margin-top: 15px;
   height: 250px;
   border-radius: 50%;
   box-shadow: 2.5px 2.5px 2.5px #1d1d1f;
@@ -82,38 +89,24 @@ nav ul li .menu:hover {
 #element {
   font-family: sans-serif;
   font-size: 30px;
-  color: #fff;
-  background-color: #a67e41;
+  font-style: italic;
+  color: #1d1d1f;
+  background-color: #b2c6b655;
   padding: 5px 10px;
   border-radius: 15px;
   box-shadow: 2.5px 2.5px 2.5px #1d1d1f;
 }
 
-.btn {
-  padding: 10px 15px;
-  font-size: 18px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #1d1d1f;
-  background-color: #ababab;
-  transition: 0.25s ease-out;
-  border: 0;
-}
-
-.btn:hover {
-  background-color: #a67e41;
-  color: #fff;
-}
-
 .cover-text .para {
-  margin-top: 50px;
+  width: 75%;
+  margin-top: 70px;
   font-size: 20px;
-  background-color: #ababab;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 15px;
   letter-spacing: 1.5px;
   line-height: 1.35;
-  box-shadow: 2.5px 2.5px 2.5px #1d1d1f;
+  box-shadow: -2.5px -2.5px 2.5px #b75b48;
+  background: linear-gradient(0.5turn, #e8ecd6, #fff);
 }
 
 .cover-text h1 {
@@ -121,9 +114,30 @@ nav ul li .menu:hover {
   margin-top: 20px;
 }
 
-.cover-text h1 span {
-  color: #a67e41;
+.cover-text h1 .span1 {
+  font-style: italic;
+  font-weight: 500;
+}
+.cover-text h1 .span2 {
+  color: #b75b48;
   font-size: 60px;
+  font-family: Arial;
+}
+
+.btn {
+  border: 0;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #1d1d1f;
+  background-color: #b75b48dd;
+  transition: 0.25s ease-out;
+}
+
+.btn:hover {
+  color: #fff;
+  box-shadow: 2.5px 2.5px 10px #b75b48;
 }
 
 .fa-briefcase {
@@ -151,7 +165,7 @@ nav ul li .menu:hover {
 }
 
 .social-icons a:hover {
-  color: #a67e41;
+  color: #b75b48;
   transform: translateY(-2.5px);
 }
 
@@ -166,26 +180,22 @@ nav ul li .menu:hover {
   flex-direction: column;
   align-items: center;
   padding: 25px 10%;
-  background-color: #ab987a25;
+  background: linear-gradient(0.5turn, #e8ecd699, #fff);
   margin: 50px 50px 0;
   border-radius: 50px;
-  transition: 0.5s;
-}
-
-.container:hover {
-  box-shadow: 2.5px 2.5px 2.5px #a67e41;
 }
 
 .sub-title {
-  width: 25%;
-  padding-bottom: 10px;
-  font-size: 50px;
-  font-weight: 400;
-  color: #a67e41;
-  text-align: center;
-  margin-bottom: 30px;
-  box-shadow: 2.5px 2.5px 2.5px #a67e41;
   border-radius: 25px;
+  font-style: italic;
+  width: 20%;
+  padding: 10px 0;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #b2c6b699;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 2.5px #1d1d1f;
 }
 
 .container .par {
@@ -197,22 +207,22 @@ nav ul li .menu:hover {
 }
 
 .skills-list div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 175px;
   height: 135px;
   border-radius: 10px;
   color: #1d1d1f;
-  background-color: #ababab;
+  background-color: #e8ecd6;
   margin: 0 15px 25px;
-  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
 }
 
 .skills-list div:hover {
+  background: #b2c6b699;
   box-shadow: 2.5px 2.5px 2.5px #1d1d1f;
-  background: #a67e41;
   transform: translateY(-5px);
 }
 
@@ -224,8 +234,8 @@ nav ul li .menu:hover {
 
 .skills-list div i {
   font-size: 50px;
+  color: #b75b48;
   margin-bottom: 15px;
-  color: #1d1d1f;
 }
 
 .skills-list div h2 {
@@ -235,7 +245,6 @@ nav ul li .menu:hover {
 
 /* ----------------- Projects ------------------- */
 #projects {
-  margin-bottom: 100px;
   padding-top: 25px;
 }
 
@@ -259,28 +268,29 @@ nav ul li .menu:hover {
 }
 
 .layer {
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #a67e41);
-  border-radius: 10px;
-  position: absolute;
-  bottom: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #b75b48);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
   padding: 0 40px;
+  height: 0;
   transition: 0.5s;
 }
 
 .layer h3 {
   font-size: larger;
   font-weight: 525;
-  margin-bottom: 20px;
   color: white;
-  background-color: #a67e41;
+  background-color: #b75b48;
+  margin-bottom: 20px;
   padding: 7px 10px;
   border-radius: 10px;
+  box-shadow: 2.5px 2.5px 2.5px #1d1d1f;
 }
 
 .layer p {
@@ -292,7 +302,7 @@ nav ul li .menu:hover {
 .layer a {
   color: #1d1d1f;
   line-height: 60px;
-  background-color: #ababab;
+  background-color: #b2c6b6;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -301,7 +311,7 @@ nav ul li .menu:hover {
 
 .layer a:hover {
   background-color: #fff;
-  color: #a67e41;
+  color: #b75b48;
 }
 
 .project:hover img {
@@ -329,14 +339,15 @@ nav ul li .menu:hover {
 }
 
 .sub-title-c {
-  width: 65%;
-  padding-bottom: 10px;
-  font-size: 50px;
+  font-style: italic;
+  width: 50%;
+  padding: 10px 0;
+  font-size: 40px;
   font-weight: 400;
-  color: #a67e41;
   text-align: center;
+  background-color: #b2c6b699;
   margin-bottom: 30px;
-  box-shadow: 2.5px 2.5px 2.5px #a67e41;
+  box-shadow: 5px 5px 2.5px #1d1d1f;
   border-radius: 25px;
 }
 
@@ -358,7 +369,7 @@ nav ul li .menu:hover {
 }
 
 .contact-left p i {
-  color: #a67e41;
+  color: #b75b48;
   margin-right: 15px;
   font-size: 25px;
 }
@@ -368,7 +379,7 @@ nav ul li .menu:hover {
 }
 
 #contact hr {
-  border: 1px solid #a67e41;
+  border: 1px solid #b75b48;
   margin-left: -80px;
   margin-bottom: -20px;
 }
@@ -377,7 +388,7 @@ form input,
 form textarea {
   width: 100%;
   border: 0;
-  background: #ababab;
+  background-color: #e8ecd6;
   padding: 15px;
   margin: 10px 0;
   color: #1d1d1f;
@@ -395,7 +406,7 @@ form {
   margin-top: 50px;
   height: 60px;
   width: 100%;
-  background-color: #a67e41;
+  background-color: #e8ecd6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,7 +418,6 @@ nav .fas {
 }
 
 /* ------------------------------ Responsiveness ---------------------------------- */
-
 @media (max-width: 600px) {
   html,
   body {
@@ -423,7 +433,7 @@ nav .fas {
   }
 
   .logo {
-    width: 100px;
+    font-size: 30px;
   }
 
   nav .fas {
@@ -432,7 +442,7 @@ nav .fas {
   }
 
   #sidemenu {
-    background-color: #a67e41ef;
+    background-color: #b2c6b6ef;
     position: fixed;
     top: 0;
     right: -200px;
@@ -440,7 +450,7 @@ nav .fas {
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
-    transition: right 0.5s;
+    transition: 0.5s;
   }
 
   #sidemenu li {
@@ -451,7 +461,6 @@ nav .fas {
     position: absolute;
     top: 25px;
     left: 25px;
-    cursor: pointer;
   }
 
   nav ul li .menu {
@@ -460,45 +469,51 @@ nav .fas {
   }
 
   .fa-bars:hover {
-    color: #a67e41;
+    color: #b75b48;
   }
 
   .fa-xmark {
-    color: #a67e41;
+    color: #b75b48;
   }
 
   nav ul li .menu:hover {
-    color: #fff;
-    box-shadow: 5px 5px 25px #1d1d1f;
-  }
-
-  .btn-h:hover {
-    background-color: #1d1d1f;
+    color: #b75b48;
+    box-shadow: 5px 5px 25px #b75b48;
   }
 
   /* --------------------------- Cover(m) ---------------------------- */
-  .cover {
+  main .cover {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-    padding: 67px 0px 25px;
-    margin: 0 20px;
+    padding: 60px 0px 25px;
+    border-end-end-radius: 50px;
+    margin: 0 25px;
   }
 
   .cover-image img {
     height: 165px;
-    margin-bottom: -5px;
+    margin-bottom: -30px;
   }
-
+  .cover-text .para {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: justify;
+  }
   .cover-text h1 {
     text-align: center;
+  }
+  .cover-text h1 .span1 {
     font-size: 30px;
   }
 
-  .cover-text h1 span {
-    color: #a67e41;
-    font-size: 30px;
+  .cover-text h1 .span2 {
+    font-size: 35px;
   }
 
   #design {
@@ -508,13 +523,6 @@ nav .fas {
 
   #element {
     font-size: 20px;
-  }
-
-  .cover-text .para {
-    width: 300px;
-    font-size: 15px;
-    margin: -10px 0 25px;
-    text-align: justify;
   }
 
   .top-cover {
@@ -566,10 +574,6 @@ nav .fas {
   }
 
   /* ----------------- Projects(m) ------------------- */
-  #projects {
-    margin-bottom: 70px;
-  }
-
   .projects-list {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 25px 0;
@@ -577,12 +581,11 @@ nav .fas {
 
   .project img {
     border-radius: 33px;
-    width: 85%;
   }
 
   .project {
-    height: 350px;
-    width: 400px;
+    height: 325px;
+    width: 325px;
     border-radius: 33px;
     display: flex;
     justify-content: center;
@@ -606,11 +609,11 @@ nav .fas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 67px;
+    padding-top: 60px;
   }
 
   .sub-title-c {
-    margin-top: -10px;
+    text-align: center;
     width: 50%;
     font-size: 25px;
     font-weight: 600;
@@ -618,8 +621,9 @@ nav .fas {
   }
 
   .contact-left {
-    width: 60%;
+    width: 75%;
     text-align: center;
+    margin-right: 0;
   }
 
   .contact-left p {
@@ -644,7 +648,7 @@ nav .fas {
     margin-bottom: 5px;
     margin-left: 10px;
     width: 100%;
-    border: 1px solid #a67e41;
+    border: 1px solid #b75b48;
   }
 
   .contact-right {
@@ -657,8 +661,9 @@ nav .fas {
     margin-top: -50px;
   }
 
-  /* ----------------- Footer ----------------- */
+  /* ----------------- Footer(m) ----------------- */
   .copyright {
+    margin-top: 0px;
     height: 45px;
   }
 }
