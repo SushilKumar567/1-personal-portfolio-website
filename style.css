@@ -445,11 +445,11 @@ nav .fas {
     background-color: #b2c6b6ef;
     position: fixed;
     top: 0;
-    right: -200px;
     width: 150px;
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
+    right: -150px;
     transition: 0.5s;
   }
 
@@ -609,7 +609,8 @@ nav .fas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    margin-top: -25px;
   }
 
   .sub-title-c {

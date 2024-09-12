@@ -1,9 +1,12 @@
-var sidemenu = document.getElementById("sidemenu");
+let sidemenu = document.querySelector("#sidemenu");
 
-const openmenu = () => {
+let openMenu = document.querySelector(".fa-bars");
+let closeMenu = document.querySelector(".fa-xmark");
+
+openMenu.addEventListener("click", () => {
   sidemenu.style.right = "0";
-};
+});
 
-const closemenu = () => {
-  sidemenu.style.right = "-200px";
-};
+closeMenu.addEventListener("click", () => {
+  sidemenu.style.right = "-150px";
+});
