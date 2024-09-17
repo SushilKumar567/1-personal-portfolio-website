@@ -14,7 +14,7 @@ Developed with a mobile-first approach, ensuring compatibility and optimization 
 Emphasis on clean, well-structured HTML5 for better accessibility, SEO, and maintainability.
 
 **Modern CSS:**
-Utilizes CSS3 features such as Flexbox and Grid for efficient, responsive layouts, and media queries to ensure design adaptability.
+Uses CSS3 features like Flexbox, Grid layout, and transitions to build responsive layouts, with media queries for adapting designs to different devices.
 
 ## Technologies Used:
 
