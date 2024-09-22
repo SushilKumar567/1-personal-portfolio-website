@@ -4,11 +4,13 @@
   .sub-title {
     width: 200px;
   }
+
   .sub-title-c {
     text-align: center;
     width: 200px;
     border-radius: 25px;
   }
+
   .projects-list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px 100px;
@@ -25,14 +27,17 @@
   #contact hr {
     margin-left: 0px;
   }
+
   .sub-title {
     width: 200px;
   }
+
   .sub-title-c {
     text-align: center;
     width: 200px;
     border-radius: 25px;
   }
+
   .projects-list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px 100px;
@@ -49,6 +54,10 @@
   html,
   body {
     font-size: 15px;
+  }
+
+  #tailwind img {
+    width: 50px;
   }
 
   /* ------------------------ Header(m) ------------------------ */

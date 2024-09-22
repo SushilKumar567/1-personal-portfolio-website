@@ -78,7 +78,7 @@ main .cover {
   margin-top: 15px;
   height: 250px;
   border-radius: 50%;
-  box-shadow: 2.5px 2.5px 2.5px #1d1d1f;
+  box-shadow: 2.5px 2.5px 7.5px #1d1d1f;
 }
 
 #design {
@@ -235,6 +235,15 @@ main .cover {
   font-size: 50px;
   color: #b75b48;
   margin-bottom: 15px;
+}
+
+#tailwind {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#tailwind img {
+  width: 60px;
 }
 
 .skills-list div h2 {
